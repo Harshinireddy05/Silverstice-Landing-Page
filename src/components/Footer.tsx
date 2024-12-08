@@ -1,6 +1,10 @@
 import { Linkedin, Instagram } from 'lucide-react';
 
-export function Footer() {
+interface FooterProps {
+  onNavigate: (page: string) => void;
+}
+
+export function Footer({ onNavigate }: FooterProps) {
   return (
     <footer className="bg-black text-white">
       <div className="container mx-auto px-4 py-12">
@@ -8,16 +12,44 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Silverstice</h3>
             <p className="text-gray-400">
-            A Generative AI-powered technology startup.
+            A generative AI-powered technology startup revolutionizing industries through strategic insights, innovative solutions, and advanced data-driven methodologies. Transforming businesses worldwide with cutting-edge AI and a commitment to continuous improvement.
             </p>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="/" className="text-gray-400 hover:text-blue-600">Data-Driven Solutions</a></li>
-              <li><a href="/about" className="text-gray-400 hover:text-blue-600">Generative AI Platform</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-blue-600">Sustainability Guidelines</a></li>
-              <li><a href="/contact" className="text-gray-400 hover:text-blue-600">Professional</a></li>
+              <li>
+                <button 
+                  onClick={() => onNavigate('home')} 
+                  className="text-gray-400 hover:text-blue-600"
+                >
+                  Data-Driven Solutions
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => onNavigate('about')} 
+                  className="text-gray-400 hover:text-blue-600"
+                >
+                  Generative AI Platform
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => onNavigate('services')} 
+                  className="text-gray-400 hover:text-blue-600"
+                >
+                  Sustainability Guidelines
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => onNavigate('team')} 
+                  className="text-gray-400 hover:text-blue-600"
+                >
+                  Professional
+                </button>
+              </li>
             </ul>
           </div>
           <div>

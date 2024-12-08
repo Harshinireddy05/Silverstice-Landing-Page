@@ -1,28 +1,28 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Shield, Target, Users, Zap } from 'lucide-react';
+import { Leaf, Lightbulb, Users, Handshake } from 'lucide-react';
 import { staggerContainer, scaleUp, fadeInUp } from '../utils/animations';
 
 const coreValues = [
   {
-    icon: Shield,
-    title: 'Trust & Security',
-    description: 'Building lasting relationships through transparency and reliable solutions.'
-  },
-  {
-    icon: Target,
+    icon: Lightbulb,
     title: 'Innovation',
-    description: 'Pushing boundaries and embracing cutting-edge technologies.'
+    description: 'We are driven by creativity and a passion for pushing the boundaries of technology. At Fit.me Labs, we constantly strive to create innovative solutions that redefine the online shopping experience. Our commitment to innovation ensures that we stay ahead of the curve and provide cutting-edge services for the e-commerce industry.'
   },
   {
     icon: Users,
-    title: 'Collaboration',
-    description: 'Working together to achieve exceptional results.'
+    title: 'Customer-Centricity',
+    description: 'Our customers are at the heart of everything we do. We prioritize their needs, feedback, and satisfaction, creating products and services that empower them to make confident purchasing decisions. By understanding their pain points, we work towards delivering an unparalleled, personalized shopping experience.'
   },
   {
-    icon: Zap,
-    title: 'Excellence',
-    description: 'Delivering premium quality in everything we do.'
+    icon: Leaf,
+    title: 'Sustainability',
+    description: 'At Fit.me Labs, we believe in creating solutions that contribute to a more sustainable future. Our virtual try-on technology helps reduce the environmental impact of returns, waste, and overproduction in the fashion industry, aligning with our commitment to eco-friendly practices.'
+  },
+  {
+    icon: Handshake,
+    title: 'Collaboration',
+    description: 'We believe that the best results come from working together—whether it is within our team or with our partners. Collaboration fosters creativity, accelerates growth, and enables us to solve complex challenges more effectively. We are committed to building strong relationships and working as a unified force to transform the e-commerce landscape.'
   }
 ];
 

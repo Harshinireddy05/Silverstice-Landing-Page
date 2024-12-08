@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { fadeIn, fadeInUp } from '../utils/animations';
+import story from '../assets/story.png';
 
 export function Story() {
   const [ref, inView] = useInView({
@@ -23,7 +24,7 @@ export function Story() {
             transition={{ duration: 0.3 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+              src={story}
               alt="Our Story"
               className="rounded-lg shadow-xl"
             />
@@ -32,19 +33,12 @@ export function Story() {
             className="flex-1"
             variants={fadeInUp}
           >
-            <h2 className="text-4xl font-bold mb-6">Our Story</h2>
+            <h2 className="text-4xl font-bold mb-6">WHAT DO WE EXACTLY DO?</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-            At Fit.me Labs, we started with a vision to revolutionize online shopping. 
-            In an era where online shopping is booming, one issue continues to plague 
-            shoppers: sizing and fit. We wanted to create a solution that empowers 
-            shoppers to make confident decisions when purchasing apparel, accessories, 
-            and even makeup.
+            Silverstice & Company is a premier global management consulting firm that offers strategic advice and innovative solutions to organizations across various industries. Our expertise spans several key areas, including strategy consulting, where we help businesses develop growth strategies, optimize operations, and navigate industry disruptions. We also specialize in operations and digital transformation, assisting companies in enhancing their operational efficiency through cutting-edge digital technologies. Our organization and talent division reshapes corporate structures and talent strategies to foster innovation and growth. Additionally, we leverage advanced analytics, artificial intelligence, and machine learning to provide data-driven insights that solve complex business challenges. Our mergers and acquisitions team guides companies through strategic alignments, maximizing value in deals and ensuring seamless post-deal integration.
             </p>
             <p className="text-gray-600 leading-relaxed">
-            After years of research and innovation, we developed our cutting-edge 
-            virtual try-on technology, designed to offer a truly personalized shopping 
-            experience. We aim to minimize returns, reduce frustration, and enhance 
-            satisfaction for both customers and retailers alike.
+            With a global presence in major cities and a diverse team of experts, Silverstice has built a reputation as a trusted advisor to leading corporations, governments, and nonprofit organizations worldwide. Our firm is renowned for its rigorous problem-solving approach, continuous learning culture, and strong emphasis on teamwork, diversity, and leadership development. At Silverstice, we are committed to delivering high-impact solutions and thought leadership that drive long-term success for our clients, solidifying our legacy as a leader in the consulting industry.
             </p>
           </motion.div>
         </motion.div>
