@@ -25,7 +25,7 @@ export function Hero() {
           className="max-w-4xl px-4"
         >
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Where <span className="text-blue-600">Algorithms</span> Meets{" "}
+            Where <span className="text-blue-600">Algorithms</span> Meet{" "}
             <span className="text-blue-600">Ambitions</span>
           </h1>
           <p className="text-xl text-gray-200 mb-8">
