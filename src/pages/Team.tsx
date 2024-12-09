@@ -1,13 +1,17 @@
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Twitter } from 'lucide-react';
 import { staggerContainer, scaleUp, fadeInUp } from '../utils/animations';
+import Nidhi from '../assets/Nidhi.jpeg';
+import Hasvanth from '../assets/Hasvanth.jpeg';
+import Aishani from '../assets/Aishani.jpeg';
+import Kunal from '../assets/Kunal.jpeg';
 
 const teamMembers = [
   {
-    name: 'Sarah Johnson',
-    role: 'CEO & Founder',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80',
-    bio: 'With over 15 years of experience in tech leadership, Sarah drives our vision forward.',
+    name: 'Srindhi Pudipeddi',
+    role: 'Co-Founder',
+    image: Nidhi,
+    bio: 'Srindhi is a passionate entrepreneur with a knack for creating innovative and data-driven solutions for financial markets. She is dedicated to driving our vision forward and making a positive impact on the world.',
     social: {
       linkedin: '#',
       twitter: '#',
@@ -15,10 +19,21 @@ const teamMembers = [
     }
   },
   {
-    name: 'Michael Chen',
+    name: 'Hasvanth Reddy Nellore',
+    role: 'Co-Founder',
+    image: Hasvanth,
+    bio: 'Hasvanth is a visionary leader with a focus on creating meaningful change through management and consulting. He is dedicated to driving our mission forward.',
+    social: {
+      linkedin: '#',
+      twitter: '#',
+      github: '#'
+    }
+  },
+  {
+    name: 'Kunal Kankariya',
     role: 'CTO',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80',
-    bio: 'A brilliant technologist with a passion for innovative solutions and emerging technologies.',
+    image: Kunal,
+    bio: 'Leads our tech team with expertise in software development and system architecture. Passionate about innovation and creating scalable solutions.',
     social: {
       linkedin: '#',
       twitter: '#',
@@ -26,27 +41,17 @@ const teamMembers = [
     }
   },
   {
-    name: 'Emily Rodriguez',
-    role: 'Head of Design',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80',
-    bio: 'Emily brings creative vision and user-centered design principles to every project.',
+    name: 'Aishani Rachakonda',
+    role: 'Technical Associate',
+    image: Aishani,
+    bio: 'Aishani is a dedicated technical associate with a passion for creating innovative solutions.',
     social: {
       linkedin: '#',
       twitter: '#',
       github: '#'
     }
   },
-  {
-    name: 'David Kim',
-    role: 'Lead Developer',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80',
-    bio: 'A full-stack expert who leads our development team with technical excellence.',
-    social: {
-      linkedin: '#',
-      twitter: '#',
-      github: '#'
-    }
-  }
+  
 ];
 
 export function Team() {
@@ -65,7 +70,7 @@ export function Team() {
             animate="visible"
             className="text-4xl md:text-6xl font-bold mb-6"
           >
-            Our Team
+            Our People
           </motion.h1>
           <motion.p 
             variants={fadeInUp}
@@ -99,7 +104,6 @@ export function Team() {
                     alt={member.name}
                     className="w-full h-64 object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
