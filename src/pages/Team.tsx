@@ -5,6 +5,7 @@ import Nidhi from '../assets/Nidhi.jpeg';
 import Hasvanth from '../assets/Hasvanth.jpeg';
 import Aishani from '../assets/Aishani.jpeg';
 import Kunal from '../assets/Kunal.jpeg';
+import Harshini from '../assets/Harshini.jpeg';
 
 const teamMembers = [
   {
@@ -44,7 +45,18 @@ const teamMembers = [
     name: 'Aishani Rachakonda',
     role: 'Technical Associate',
     image: Aishani,
-    bio: 'Aishani is a dedicated technical associate with a passion for creating innovative solutions.',
+    bio: 'Aishani is passionate about creating impactful data-driven solutions that blend innovation, sustainability, and real-world problem-solving. She is dedicated to delivering efficient solutions that drive meaningful progress.',
+    social: {
+      linkedin: '#',
+      twitter: '#',
+      github: '#'
+    }
+  },
+  {
+    name: 'Harshini Reddy Nellore',
+    role: 'Frontend Developer ',
+    image: Harshini,
+    bio: 'Harshini is a creative frontend developer with a passion for building intuitive websites. She brings a unique blend of design and development skills to create seamless web experiences.',
     social: {
       linkedin: '#',
       twitter: '#',
@@ -86,7 +98,7 @@ export function Team() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             variants={staggerContainer}
             initial="hidden"
             animate="visible"
@@ -102,7 +114,7 @@ export function Team() {
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-80 object-cover"
                   />
                 </div>
                 <div className="p-6">
